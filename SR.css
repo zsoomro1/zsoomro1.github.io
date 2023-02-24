@@ -22,10 +22,13 @@ h2 {
   margin-right: auto;
   width: 50%;
 }
-
+.dropdown-menu {
+  background-color: beige;
+}
 #dropdownMenuButton {
-  background-color: white;
+  background-color: beige;
   color: black;
+  
 }
 #home {
   position: absolute;
@@ -72,6 +75,10 @@ h2 {
 form {
   max-width: 500px;
   margin: 150px auto;
+  border-style: solid;
+  background-color: antiquewhite;
+
+
 }
 
 fieldset {
@@ -98,4 +105,7 @@ fieldset {
 .fa-facebook {
   background: #3B5998;
   color: white;
+}
+#legend{
+  font-weight: bold;
 }
