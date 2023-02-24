@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soomro Realty</title>
+    <title>Eaglewood Apartments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -32,14 +34,17 @@
         <a class="dropdown-item" href="kenosha.html">Kenosha</a>
         <a class="dropdown-item" href="racine.html">Racine</a>
         <a class="dropdown-item" href="oakcreek.html">Oak Creek</a>
+
       </div>
     </div>
-    <h1>Soomro Realty</h1>
+    <a href="https://www.facebook.com/profile.php?id=100090215875469" target="_blank" rel="noopener noreferrer"class="fa fa-facebook"></a>
+
+    <h1>Eaglewood Apartments</h1>
     
     <div class="phone">262-883-9677</div>
     <a
       class="img1"
-      href="https://www.apartments.com/greenbriar-apartments-racine-wi/vvlzfhd/"
+      href="https://www.apartments.com/greenbriar-apartments-racine-wi/vvlzfhd/"target="_blank" rel="noopener noreferrer"
       ><img src="images/gbimage1.jpg" alt="photo1"  class="center"
     /></a>
     <h2>1445-1455 S Emmertsen Rd, Racine, WI 53406 – Sturtevant</h2>
@@ -58,6 +63,31 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    
+    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+      <fieldset>
+        <legend>Contact Form</legend>
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+        <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+        <div>
+          <label for="name">Full Name</label><br>
+          <input type="text" name="name" id="name" placeholder="John Doe" required />
+          <br><br>
+        </div>
+        <div>
+          <label for="email">Email Address</label><br>
+          <input type="email" name="email" id="email" placeholder="you@company.com" required /><br><br>
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <br>
+          <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required /><br><br>
+        </div>
+      
+        <button type="submit"> Submit </button>
+        
+      </fieldset>
+    </form>
   </body>
 </html>
