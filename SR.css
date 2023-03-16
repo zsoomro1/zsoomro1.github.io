@@ -118,3 +118,21 @@ fieldset {
   color: white;
   text-align: center;
 }
+.toolbar {
+  text-align: center;
+  background-color: #035891;
+  padding: 0 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+.seo-number{
+  color: aliceblue;
+  font-weight: bold;
+  
+}
+a:hover {
+  background-color: gray;
+}
