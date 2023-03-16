@@ -21,7 +21,8 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  pointer-events: none;
+  
+  /* pointer-events: none; */
 }
 .dropdown-menu {
   background-color: beige;
@@ -136,11 +137,7 @@ fieldset {
   
 }
 a:hover {
-  background-color: gray;
+  background-color: inherit;
 }
-.header-social [class^="sicon-"]:before, .header-social [class*=" sicon-"]:before {
-  font-size: 12px;
-  border: none;
-  margin-bottom: 0;
-  line-height: 1;
-}
+a.seo-number:hover{color: grey;}
+a.fa fa-facebook:hover{color:white}
