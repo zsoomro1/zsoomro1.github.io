@@ -1,101 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eaglewood Apartments</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ea.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="SR.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-  </head>
-  <body>
-    <div id="" class="toolbar"><div id="" class="header-phone">
-      <a class="seo-number" href="tel:(262)883-9677" onclick="f_analyticsSendEvent('general', 'click-phone-number', '(262) 883-9677')">(262) 883-9677</a></div>
-      
-      <div id="" class="header-social"><div id="p_lt_zoneHeader_WebPartZone8_WebPartZone8_zone_SocialMedia1_pnlSocialNetworks" class="social_media">
-        <a href="https://www.facebook.com/profile.php?id=100090215875469" target="_blank" rel="noopener noreferrer"class="fa fa-facebook"></a>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/android-chrome-192x192.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-lg" onclick="hideMenu()"></i>
 
-      </div></div></div>
-    <div class="dropdown">
-      <button
-        class="btn btn-secondary dropdown-toggle"
-        type="button"
-        id="dropdownMenuButton"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        Location
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="kenosha.html">Kenosha</a>
-        <a class="dropdown-item" href="racine.html">Racine</a>
-        <a class="dropdown-item" href="oakcreek.html">Oak Creek</a>
 
-      </div>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="locations.html">LOCATIONS</a>
+                    </li>
+                    <li>
+                        <a href="about.html">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="reviews.html">APPLY</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 class="welcome1">WELCOME TO </h1>
+             <h1 class="welcome2">EAGLEWOOD APARTMENTS</h1>
+            <p>
+                Welcome to Eaglewood Apartments, a residential community featuring one and two bedroom apartments in Kenosha, Racine, and Oakcreek <br> Are you looking for an apartment for rent in Kenosha, WI? Contact our friendly, professional office staff to schedule a tour today.
+            </p>
+            <a href="" class="hero-btn">Learn More</a>
+        </div>
+    </section>
+<!-------LOCATIONS ------------------------->
+<section class="locations">
+    <h1>Locations</h1>
+    <p>Lorem ipsum dolor, sit amet </p>
+    <div class="row">
+        <div class="locations-col">
+            <h3>Racine</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
+        </div>
+        <div class="locations-col">
+            <h3>Kenosha</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
+        </div>
+        <div class="locations-col">
+            <h3>Oakcreek</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
+        </div>
     </div>
-    <h1>Eaglewood Apartments</h1>
 
-    <a
-      class="img1"
-      href="https://www.apartments.com/greenbriar-apartments-racine-wi/vvlzfhd/"target="_blank" rel="noopener noreferrer"
-      ><img src="images/gbimage1.jpg" alt="photo1"  class="center" 
-    /></a>
-    <h2>1445-1455 S Emmertsen Rd, Racine, WI 53406 – Sturtevant</h2>
-    
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <form action="https://api.web3forms.com/submit" method="POST" id="form">
-      <fieldset>
-        <legend id="legend">Contact Form </legend>
-        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
-        <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-        <input type="checkbox" name="botcheck" id="" style="display: none;" />
-        <div>
-          <label for="name">Full Name</label><br>
-          <input type="text" name="name" id="name" placeholder="John Doe" required />
-          <br><br>
+</section>
+<!-------Contact------------------------->
+<section class="contact">
+    <h1>Contact Information</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
+    <div class="row">
+        <div class="contact-col">
+            <img src="images/gbimage1.png">
+            <div class="layer">
+                <h3>Racine</h3>
+            </div>
         </div>
-        <div>
-          <label for="email">Email Address</label><br>
-          <input type="email" name="email" id="email" placeholder="you@company.com" required /><br><br>
+        <div class="contact-col">
+            <img src="images/kenosha.jpg">
+            <div class="layer">
+                <h3>Kenosha</h3>
+            </div>
         </div>
-        <div>
-          <label for="phone">Phone Number</label>
-          <br>
-          <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required /><br><br>
+        <div class="contact-col">
+            <img src="images/oakcreek.png">
+            <div class="layer">
+                <h3>Oakcreek</h3>
+            </div>
         </div>
-      
-        <button type="submit"> Submit </button>
-        
-      </fieldset>
-    </form>
-    <div class="footer">
-      <a href = "mailto: propertymanager@eaglewoodapartments.com">email: propertymanager@eaglewoodapartments.com</a>
     </div>
-  </body>
+
+</section>
+<!-------Gallery------------------------->
+<section class="gallery">
+    <h1>Gallery</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
+    <div class="row">
+        <div class="gallery-col">
+            <img src="images/kitchen.jpeg" >
+            <h3>Kitchen</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
+        </div>
+        <div class="gallery-col">
+            <img src="images/hallway.jpeg" >
+            <h3>Bathroom</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
+        </div>
+        <div class="gallery-col">
+            <img src="images/fireplace.jpeg" >
+            <h3>Bedroom</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
+        </div>
+    </div>
+
+</section>
+<!-------APPLY ------------------------->
+<section class="apply">
+    <h1>Appy</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
+    <div class="row">
+        <div class="apply-col">
+            <img src="/images/zs.jpeg">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
+                <h3>name</h3>
+
+            </div>
+        </div>
+        <div class="apply-col">
+            <img src="/images/ks.jpeg">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
+                <h3>name2</h3>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<!------- Survey ------------------------->
+<section class="survey">
+    <h1>Get in Touch</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+<!------- Footer ------------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>OFFICE HOURS: Monday - Friday: 9:00AM to 5:00PM, Saturday: 10:00AM to 4:00PM, Sunday: Closed
+        </p>
+    <div class="icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-instagram"></i>
+
+
+
+
+
+    </div>
+</section>
+
+<!-------Javascript for menu toggle ------------------------->
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
 </html>
