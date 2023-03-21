@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eaglewood Apartments</title>
+    <title>Greenbriar Apartments</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
     <link rel="stylesheet" href="ea.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-10HTYS9D4D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-10HTYS9D4D');
+</script>
 </head>
 
 <body>
@@ -26,9 +36,6 @@
                         <a href="locations.html">LOCATIONS</a>
                     </li>
                     <li>
-                        <a href="about.html">GALLERY</a>
-                    </li>
-                    <li>
                         <a href="reviews.html">APPLY</a>
                     </li>
                     <li>
@@ -39,60 +46,82 @@
             </div>
             <i class="bi bi-list" onclick="showMenu()"></i>
         </nav>
-       <h1>Reviews</h1>
+       <h1>Apply</h1>
     </section>
-<!------- Review content ------------------------->
-<section class="review-content">
-    <div class="row">
-        <div class="review-left">
-            <img src="images/fireplace.jpeg">
-            <h2>Fireplace</h2>
-            <div class="comment-box">
-                <h3>Leave a Comment</h3>
-                <form class="comment-form">
-                    <input type="text" placeholder="Enter Name">
-                    <input type="email" placeholder="Enter Email">
-                    <textarea rows="5" placeholder="Your Comment"></textarea>
-                    <button type="submit" class="hero-btn red-btn">POST COMMENT
-                    </button>
+  <!------- form ------------------------->
+  <div class="form1">
+<form name="submit-to-google-sheet" class="application">
+    <label>First Name:</label><br>
+    <input type="text" name="first name" required><br><br>
+    <label>Last Name:</label><br>
+    <input type="text" name="last name" required><br><br>
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+    <label>Phone Number:</label><br>
+    <input type="number" name="phone number" required><br><br>
+    <label>Date of Birth:</label><br>
+    <input type="date" name="DOB" required><br><br>
+    <label>Evictions:</label><br><br>
+    <input class="yorn" type="radio" name="evictions" required value="Yes"><label> Yes</label><br>
+    <input class ="yorn" type="radio" name="evictions" value="No"><label> No</label><br><br>
+    <label>Pets:</label><br><br>
+    <input class="yorn" type="radio" name="pets" required value="Yes"><label> Yes</label><br>
+    <input class ="yorn" type="radio" name="pets" value="No"><label> No</label><br><br>
+    <label>Please list all pets:</label><br>
+    <textarea name="pet list" cols="40" rows="3"></textarea><br><br>
+    <label>Number of occupants:</label>
+    <input type="number" name="occupants" required><br><br>
+    <label>Please list all occupants:</label><br><br>
+    <textarea name="occupant list" cols="40" rows="3"></textarea><br><br>
+    <label>Have you ever been convicted of a felony?</label><br><br>
+    <input class="yorn" type="radio" name="crime" required value="Yes"><label> Yes</label><br>
+    <input class ="yorn" type="radio" name="crime" value="No"><label> No</label><br><br>
+    <label>If yes, please explain:</label><br>
+    <textarea name="crime list" cols="40" rows="3"></textarea><br><br>
+    <label>Desired lease term:</label><br><br>
+    <input class="yorn" type="radio" name="lease" required value="6 months"><label> 6 months</label><br>
+    <input class ="yorn" type="radio" name="lease" value="1 year"><label> 1 year</label><br><br>
+    <label>Employment:</label><br>
+    <input type="text" name="employment" required><br><br>
+    <label>Monthly Income:</label><br>
+    <input type="number" name="income" required><br><br>
+    <input type="submit" name="submit" class="hero-btn red-btn"><br>
+    <span id="success"></span>
 
-                </form>
-            </div>
+</form>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzzmTj2KWNPuYQ2kvZxbvR_cgcacHhn-xBDQTwGBevmBuipIkpZXlkmkHPaF5_yShZK/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const success= document.getElementById('success');
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            success.innerHTML="Successfully Submitted";
+            alert("Successfully Submitted");
+            setTimeout(function(){
+                success.innerHTML=""
+            },1000
+            )
+            form.reset();
 
-        </div>
-        <div class="review-right">
-            <h3>Categories</h3>
-            <div>
-                <span>
-                    Oakcreek
-                </span>
-            </div>
-            <div>
-                <span>
-                    Racine
-                </span>
-            </div>
-            <div>
-                <span>
-                    Kenosha
-                </span>
-            </div>
-
-
-        </div>
-    </div>
-</section>
-
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  </div>
 
 <!------- Footer ------------------------->
 <section class="footer">
-    <h4>About Us</h4>
-    <p>OFFICE HOURS: Monday - Friday: 9:00AM to 5:00PM, Saturday: 10:00AM to 4:00PM, Sunday: Closed
-        </p>
+    <p>OFFICE HOURS: Monday - Friday: 9:00AM to 5:00PM<br> Saturday: 10:00AM to 4:00PM<br> Sunday: Closed
+    </p>
     <div class="icons">
-        <i class="bi bi-facebook"></i>
-        <i class="bi bi-twitter"></i>
-        <i class="bi bi-instagram"></i>
+        <a href="https://www.facebook.com/profile.php?id=100090215875469"class="bi bi-facebook"target=”_blank”></a>
+        <a href="https://twitter.com/GreenbriarAptWI"class="bi bi-twitter"target=”_blank”></a>
+        <a href="https://www.instagram.com/greenbriarapartments/"class="bi bi-instagram"target=”_blank”></a>
+
+
 
 
 

@@ -6,7 +6,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/kenosha.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Screen\ Shot\ 2022-12-14\ at\ 10.34.50\ AM.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -186,6 +186,10 @@ h3{
 .contact-col img{
     width: 100%;
     display: block;
+    min-width: 100%;
+    min-height: 100%
+
+
 }
 .layer{
     background:transparent;
@@ -242,12 +246,13 @@ h3{
     text-align: left;
 }
 /*------------apply-----------------*/
-.appy{
+.apply{
     width: 80%;
     margin:auto;
     padding-top: 100px;
     text-align: center;
 }
+
 .apply-col{
     flex-basis: 44%;
     border-radius: 10px;
@@ -255,7 +260,6 @@ h3{
     text-align: left;
     background: #fff3f3;
     padding:25px;
-    cursor: pointer;
     display:flex;
 }
 .apply-col img{
@@ -266,11 +270,21 @@ h3{
 
 }
 .apply-col p{
-    padding:0;
+    font-size: 16px;
+    margin-top: 0px;
+    padding:4px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+    text-align: left;}
+    
+.p4{
+    font-size: 15px;
+    color: #777;
 }
 .apply-col h3{
-    margin-top: 15px;
+    margin-top: 5px;
     text-align: left;
+    margin-bottom: 0px;
 }
 @media(max-width:700px){
     .apply-col img{
@@ -278,6 +292,10 @@ h3{
         margin-right: 15px;
     
     }
+    .p4{
+        font-size: 9px;
+    }
+
 }
 /*------------survey-----------------*/
 .survey{
@@ -359,7 +377,7 @@ h3{
 .red-btn:hover{
     color:#fff;
 }
-/*------------reviews-----------------*/
+/*------------contact us-----------------*/
 
 .review-content{
     width:80%;
@@ -419,12 +437,24 @@ h3{
 .comment-form button{
     margin: 10px 0;
 }
+.contactus-col.pins{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
 @media(max-width: 700px){
     .sub-header h1{
         font-size: 24px;
+    
     }
+    .contactus-col.pins{
+        margin-left: 5px;
+        padding-left: 0;}
+
 }
-/*------------about us page-----------------*/
+/*------------reviews page-----------------*/
 .map{
     width:80%;
     margin:auto;
@@ -472,4 +502,155 @@ h3{
 }
 .contactus-col .email{
     font-size: 12px;
+}
+
+.racine{
+    margin-top: 60px;
+    padding-top: 20px;
+}
+
+/*------------location-----------------*/
+
+.img-gallery{
+    width: 80%;
+    margin:100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+}
+.img-gallery img:hover{
+transform: scale(0.8) rotate(-15deg);
+border-radius: 20px;
+box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2)
+}
+.full-img{
+width: 100%;
+height: 100vh;
+background: rgba(0,0,0,0.9);
+position: fixed;
+top:0;
+left: 0;
+display: none;
+align-items: center;
+justify-content: center;
+z-index: 100;
+}
+.full-img img{
+    width: 90%;
+    max-width: 500px;
+}
+.full-img span{
+    position: absolute;
+    top:5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+#outsideimg{
+    width: 100%;
+    max-width: 800px;
+}
+@media(max-width: 700px){
+    #outsideimg{
+        width: 80%;
+        max-width: 400px;
+    }
+    .fullImg{
+        display: none;
+    }
+    
+}
+/*------------thank you page-----------------*/
+
+.thanks div{
+    text-align: center;
+    padding: 30px;
+    margin: 50px;
+
+}
+.thanks p{
+    font-size: 18px;
+
+}
+@media(max-width: 700px){
+    .thanks div{
+        font-size: 20px;
+        padding: 20px;
+        margin: 40px;
+    }
+    .thanks p{
+        font-size: 16px;
+    }
+}
+
+
+/*------------apply form-----------------*/
+
+.form1 input, .application textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+}
+.application{
+    width: 40%;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    flex-basis: 30%;
+    margin-bottom: 30px;
+}
+.application div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.form1{
+    margin-top: 40px;
+}
+.form1 .yorn{
+    width: 40px;
+}
+@media(max-width: 700px){
+    .form1{
+        font-size: 12px;
+        padding: 2px;
+        margin: 2px;
+    }
+    .form1 input, .application textarea{
+        width: 80%;
+        padding: 12px;
+        margin-bottom: 17px;
+        outline: none;
+        border:1px solid #ccc;
+        box-sizing: border-box;
+    }
+    .application{
+        width: 40%;
+        margin: auto;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        flex-basis: 30%;
+        margin-bottom: 30px;
+    }
+    .application div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .form1{
+        margin-top: 40px;
+    }
+    .form1 .yorn{
+        width: 20px;
+    }
 }

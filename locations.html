@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eaglewood Apartments</title>
+    <title>Greenbriar Apartments</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
     <link rel="stylesheet" href="ea.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-10HTYS9D4D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-10HTYS9D4D');
+</script>
 </head>
 
 <body>
@@ -26,9 +36,6 @@
                         <a href="locations.html">LOCATIONS</a>
                     </li>
                     <li>
-                        <a href="about.html">GALLERY</a>
-                    </li>
-                    <li>
                         <a href="reviews.html">APPLY</a>
                     </li>
                     <li>
@@ -43,34 +50,91 @@
     </section>
 <!------- Locations ------------------------->
 <section class="locations">
-    <h1>Locations</h1>
-    <p>Lorem ipsum dolor, sit amet </p>
     <div class="row">
         <div class="locations-col">
             <h3>Racine</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
-        </div>
+            <p>1445-1455 S Emmertsen Rd, Racine, WI 53406 <br>1 and 2 Bedrooms<br>Patio Space<br>Garages Available<br>Starting at: $850</p>
+                </div>
         <div class="locations-col">
             <h3>Kenosha</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
+            <p>8110 75th St Kenosha, WI 53142 <br>1 and 2 Bedrooms<br>Patio Space<br>Private Entrance / Attached Garage<br>Starting at: $1350</p>
         </div>
         <div class="locations-col">
             <h3>Oakcreek</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officia quisquam quo expedita laboriosam alias dolorem rerum!.</p>
+            <p>8801 S Wood Creek Dr, Oak Creek, WI 53154 <br>1 and 2 Bedrooms<br>Patio Space<br>Private Garage<br>Starting at: $1250</p>
         </div>
     </div>
+    <h1 class="racine">Racine</h1>
+    <p>1445-1455 S Emmertsen Rd, Racine, WI 53406
+    </p>
+    <img src="images/gbimage1.jpg" id="outsideimg">
 
+    <div class="full-img" id="fullImgBox">
+        <img src="images/kenoshabedroom.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+  <div class="img-gallery">
+      <img src="images/racine1.jpg"onclick="openFullImg(this.src)">
+    <img src="images/racinecloset.jpg" onclick="openFullImg(this.src)" >
+    <img src="images/racinehall.jpg"onclick="openFullImg(this.src)">
+    <img src="images/racinekitc.jpg"onclick="openFullImg(this.src)">
+
+
+  </div>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.530453735034!2d-87.8548703!3d42.7136621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8805429d89b17e75%3A0xa713f5b6a83e5dbf!2s1445%20S%20Emmertsen%20Rd%2C%20Mt%20Pleasant%2C%20WI%2053406!5e0!3m2!1sen!2sus!4v1679186968916!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+<h1>Kenosha</h1>
+<p>8110 75th St Kenosha, WI 53142
+</p>
+<img src="images/Kenosha 2023-03-20 at 12.48.43 PM.jpg" id="outsideimg">
+
+<div class="full-img" id="fullImgBox">
+    <img src="images/kenoshabedroom.jpg" id="fullImg">
+    <span onclick="closeFullImg()">X</span>
+</div>
+<div class="img-gallery">
+    <img src="images/Kenosha 2023-03-20 at 12.47.45 PM.jpg"onclick="openFullImg(this.src)">
+    <img src="images/Kenosha 2023-03-20 at 12.49.07 PM.jpg" onclick="openFullImg(this.src)" >
+    <img src="images/kenoshabedroom.jpg"onclick="openFullImg(this.src)">
+    <img src="images/kenoshakitchen2.jpg"onclick="openFullImg(this.src)">
+
+</div>
+<section class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.415297273764!2d-87.90916868468945!3d42.56770692995561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880561a6f2325765%3A0xb2b1d64138630b26!2s8110%2075th%20St%2C%20Kenosha%2C%20WI%2053142!5e0!3m2!1sen!2sus!4v1679325767693!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<h1>Oakcreek</h1>
+<p>8801 S Wood Creek Dr, Oak Creek, WI 53154
+</p>
+<img src="images/oakcreekbig.jpg" id="outsideimg">
+
+<div class="full-img" id="fullImgBox">
+    <img src="images/kenoshabedroom.jpg" id="fullImg">
+    <span onclick="closeFullImg()">X</span>
+</div>
+<div class="img-gallery">
+<img src="images/oakcreeklivingroom.jpeg" onclick="openFullImg(this.src)" >
+<img src="images/oakcreekbathroom.jpeg"onclick="openFullImg(this.src)">
+<img src="images/oakcreekhallway.jpg"onclick="openFullImg(this.src)">
+<img src="images/oakcreekwasher.jpeg"onclick="openFullImg(this.src)">
+
+</div>
+
+<section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.431016192067!2d-87.92475248468008!3d42.88485220979063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88051462bdc04cd1%3A0xb0a6076ddaad6c56!2s8801%20S%20Wood%20Creek%20Dr%2C%20Oak%20Creek%2C%20WI%2053154!5e0!3m2!1sen!2sus!4v1679325827214!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
 </section>
 
 <!------- Footer ------------------------->
 <section class="footer">
-    <h4>About Us</h4>
-    <p>OFFICE HOURS: Monday - Friday: 9:00AM to 5:00PM, Saturday: 10:00AM to 4:00PM, Sunday: Closed
-        </p>
+    <p>OFFICE HOURS: Monday - Friday: 9:00AM to 5:00PM<br> Saturday: 10:00AM to 4:00PM<br> Sunday: Closed
+    </p>
     <div class="icons">
-        <i class="bi bi-facebook"></i>
-        <i class="bi bi-twitter"></i>
-        <i class="bi bi-instagram"></i>
+        <a href="facebook.com/greenbriarapartmentswi"class="bi bi-facebook"target=”_blank”></a>
+        <a href="https://twitter.com/GreenbriarAptWI"class="bi bi-twitter"target=”_blank”></a>
+        <a href="https://www.instagram.com/greenbriarapartments/"class="bi bi-instagram"target=”_blank”></a>
+
+
 
 
 
@@ -78,6 +142,17 @@
 
     </div>
 </section>
+<script>
+    var fullImgBox=document.getElementById("fullImgBox");
+    var fullImg=document.getElementById("fullImg");
+    function openFullImg(pic){
+        fullImgBox.style.display="flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display="none";
+    }
+</script>
 
 <!-------Javascript for menu toggle ------------------------->
     <script>
